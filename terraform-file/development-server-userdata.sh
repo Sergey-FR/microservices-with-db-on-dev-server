@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 sudo yum update -y
 sudo hostnamectl set-hostname development-server
 sudo amazon-linux-extras install docker -y
