@@ -11,7 +11,7 @@ provider "aws" {
 resource "aws_launch_template" "PetclinicServerLT" {
   image_id = var.ami
   instance_type = var.instance_type
-  key_name = var.mykey
+  key_name = var.key
   vpc_security_group_ids = [aws_security_group.dev-server-sg.id]
   user_data = filebase64("development-server-userdata.sh")
 }
