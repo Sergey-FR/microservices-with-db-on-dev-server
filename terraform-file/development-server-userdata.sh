@@ -1,6 +1,6 @@
 #! /bin/bash
 yum update -y
-hostnamectl set-hostname Development-Server
+hostnamectl set-hostname development-server
 amazon-linux-extras install docker -y
 systemctl start docker
 systemctl enable docker
