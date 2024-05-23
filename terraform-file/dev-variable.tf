@@ -1,12 +1,12 @@
-variable "mykey" {}
+variable "key" {}
 variable "ami" {
-  description = "amazon linux 2 ami"
+  description = "Amazon Linux 2023 AMI"
 }
 variable "region" {}
 variable "instance_type" {}
 variable "devops_server_secgr" {}
 variable "dev-server-ports" {
   type = list(number)
-  description = "dev-server-sec-gr-inbound-rules"
+  description = "Dev-server-sec-group-inbound-rules"
 }
 variable "devservertag" {}
